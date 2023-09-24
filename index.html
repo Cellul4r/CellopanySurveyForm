@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>Cellopany Survey Form</title>
+		<link rel = "stylesheet" href = "styles.css">
+	</head>
+	
+	<body>
+		<div class = "container">
+			<h1 id = "title">Cellopany Survey Form</h1>
+			<p id  = "description" class = "des">Thank you for taking time to help us improve the Cellopany platform</p>
+			<form id = "survey-form">
+				<div class = "formGroup">
+					<label id = "name-label" for = "name">Name
+						<input class = "controlForm" required id = "name" name = "name" type = "name" placeholder = "Type your name"/>
+					</label>
+				</div>
+				
+				<div class = "formGroup">
+					<label id = "email-label" for = "email">Email
+						<input class = "controlForm" required id = "email" name = "email" type = "email" placeholder = "Type your email"/>
+					</label>
+				</div>
+				
+				<div class = "formGroup">
+					<label id = "number-label" for = "number">Age (optional)
+						<input class = "controlForm" id = "number" name = "number" type = "number" placeholder = "Age 10-150 years only" min = 10 max = 150/>
+					</label>
+				</div>
+				
+				<div class = "formGroup">
+					<p class = "question">Which option best describes your current role?</p>
+					<select class = "controlForm" required id = "dropdown" name = "dropdown">
+						<option value = "">Select current role</option>
+						<option value = "1">Student</option>
+						<option value = "2">Full Time Job</option>
+						<option value = "3">Full Time Learner</option>
+						<option value = "4">Other</option>
+					</select>
+				</div>
+				
+				<div class = "formGroup">
+					<p>Would you recommend Cellopany to a friend?</p>
+					<label for = "definitely"><input class = "inline" id = "definitely" type = "radio" name = "recommend"/> Definitely!</label>
+					<label for = "maybe"><input class = "inline" id = "maybe" type  = "radio" name = "recommend"/> Maybe?</label>
+					<label for = "notSure"><input class = "inline" id  = "notSure" type = "radio" name = "recommend"/> Not sure</label>
+				</div>
+				
+				<div class = "formGroup">
+					<p class = "question">What is your favorite feature of Cellopany?</p>
+					<select class = "controlForm" required id = "dropdown" name = "dropdown">
+						<option value = "">Select an option</option>
+						<option value = "1">Java Programming</option>
+						<option value = "2">Discrete Mathematics</option>
+						<option value = "3">Image Processing</option>
+						<option value = "4">Object Detecting</option>
+						<option value = "5">Community</option>
+					</select>
+				</div>
+				
+				<div class = "formGroup">
+					<p class = "question">What would you like to see improved?	<span>(Check all that apply)</span></p>
+					<label for = "java"><input class = "inline" id = "java" name = "java" type = "checkbox"/>Java Programming Course</label>
+					<label for = "discreteMath"><input class = "inline" id = "discreteMath" name = "discreteMath" type = "checkbox"/>Discrete Mathematics Course</label>
+					<label for = "MachLearnProj"><input class = "inline" id = "MachLearnProj" name = "MachLearnProj" type = "checkbox"/>Machine Learning Project</label>
+					<label for = "DeepLearnProj"><input class = "inline" id = "DeepLearnProj" name = "DeepLearnProj" type = "checkbox"/>Deep Learning Project</label>
+					<label for = "video"><input id = "video" class = "inline" name = "video" type = "checkbox"/>Videos</label>
+					<label for = "forum"><input id = "forum" class = "inline" name = "forum" type = "checkbox"/>Forum</label>
+					<label for = "challanges"><input class = "inline" id = "challanges" name= "challanges"type = "checkbox"/>Challanges</label>
+					<label for = "addiCourse"><input class = "inline" id = "addiCourse" name = "addiCourse" type = "checkbox"/>Additional Courses</label>
+				</div>
+				
+				<div class = "formGroup">
+					<p class = "question">Any comments or suggestions?</p>
+					<textarea class = "controlForm" id = "comment" name = "comment" rows = "5" cols = "10" placeholder = "Enter your comments or suggestoins here :)"></textarea>
+				</div>
+				
+				<div>
+					<input class = "controlForm" type = "submit" value = "Submit"/>
+				</div>
+			</form>
+		</div>
+	</body>
+	
+</html>
